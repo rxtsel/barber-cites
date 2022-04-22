@@ -1,0 +1,64 @@
+{
+    "servicios": [
+        {
+            "id": 1,
+            "nombre": "Corte adulto",
+            "precio": 10,
+            "title": "Diez mil pesos"
+        },
+        {
+            "id": 2,
+            "nombre": "Corte niño",
+            "precio": 10,
+            "title":"Diez mil pesos"
+        },
+        {
+            "id": 3,
+            "nombre": "Corte mujer",
+            "precio": 10,
+            "title":"Diez mil pesos"
+        },
+        {
+            "id": 4,
+            "nombre": "Corte Barba",
+            "precio": 6,
+            "title":"Seis mil pesos"
+        },
+        {
+            "id": 5,
+            "nombre": "Peinado Mujer",
+            "precio": 15,
+            "title":"Quince mil pesos"
+        },
+        {
+            "id": 6,
+            "nombre": "Tinte",
+            "precio": 35,
+            "title":"Treinta y cinco mil pesos"
+        },
+        {
+            "id": 7,
+            "nombre": "Decoracion uñas",
+            "precio": 15,
+            "title":"Quince mil pesos"
+        },
+        {
+            "id": 8,
+            "nombre": "Uñas acrílicas",
+            "precio": 45,
+            "title":"Cuarenta y cinco mil pesos"
+        },
+        {
+            "id": 9,
+            "nombre": "Lavado de Cabello",
+            "precio": 35,
+            "title":"Treinta y cinco mil pesos"
+        },
+        {
+            "id": 10,
+            "nombre" : "Keratina",
+            "precio": 200,
+            "title":"Doscientos mil pesos"
+        }
+    ]
+}
