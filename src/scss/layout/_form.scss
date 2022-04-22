@@ -1,0 +1,44 @@
+.form {
+  width: 95%;
+  .campo {
+    display: flex;
+    color:  $text-light;
+    padding: 2rem;
+  }
+  label {
+    flex: 0 0 10rem;
+    align-items: center;
+    justify-content: flex-start;
+    padding: $separacion / 4;
+    @include up;
+  }
+  input {
+    flex: 1;
+    @include down;
+    text-transform: uppercase;
+    color: $text-light;
+    padding-left: 1rem;
+    letter-spacing: .2rem;
+    font-weight: $semi-bold;
+    text-overflow:ellipsis;
+    width: calc(100% - 2rem);
+  }
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.alerta {
+  margin: $separacion 0;
+  padding: 1rem;
+  letter-spacing: .5rem;
+  font-weight: $semi-bold;
+  color: $text-light;
+  &.error {
+    background-color: $error!important;
+  }
+  &.exito {
+    background-color: $exito;
+  }
+}

@@ -1,0 +1,54 @@
+.invalid-cite {
+  text-align: center;
+  margin: $separacion 0; 
+}
+.resumen {
+  @include down;
+  color: $text-light!important;
+  padding: 2rem 0;
+   p {
+     margin-bottom: .5rem;
+     span {
+       font-weight: $semi-bold;
+     }
+   }
+   .resumen-servicios {
+    .contenedor-servicio {
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid darken(#43453c, 7);
+      .precio-servicio {
+        font-weight: $semi-bold;
+        font-size: 2.4rem;
+        font-family: $secundary-font;
+      }
+      p {
+        font-weight: $semi-bold;
+      }
+    }
+  }
+
+  .resumen-cita {
+    font-family: $secundary-font;
+    margin: 4rem 0;
+    letter-spacing: 1rem;
+    font-size: 3rem;
+  }
+
+  .heading-servicios {
+    font-family: $secundary-font;
+    letter-spacing: 1rem;
+    margin: 3rem 0;
+    font-size: 2.3rem;
+  }
+ }
+
+ .total-pagar {
+   text-align: right;
+   font-weight: $semi-bold;
+     span {
+       font-weight: $bold;
+       font-size: 3rem;
+      font-family: $secundary-font;
+   }
+ }

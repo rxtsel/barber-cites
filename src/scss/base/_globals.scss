@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 60% !important;
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+p {
+  font-size: 2rem;
+}
+
+*::selection {
+  background-color: #4b4b4b;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $primary-font;
+  &.fijar-body {
+    overflow: hidden;
+  }
+}
+
+.content {
+  max-width: 120rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}

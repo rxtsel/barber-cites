@@ -1,0 +1,29 @@
+.paginador {
+  display: flex;
+  justify-content: space-between;
+
+  .button-pg {
+    @include up {
+      color: $text-light;
+      text-transform: uppercase;
+      padding: 1.5rem;
+      margin: 2rem;
+      width: 20rem;
+    };
+
+    &:active {
+      @include down;
+    }
+
+    @include tablet {
+      &:hover {
+        cursor: pointer;
+      }
+    };
+
+    &.hidden {
+      visibility: hidden;
+    }
+
+  }
+}

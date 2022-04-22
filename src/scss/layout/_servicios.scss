@@ -1,0 +1,62 @@
+.listado-servicios {
+  @include grid(1, $separacion) {
+    gap: 4rem;
+  };
+
+  @include tablet {
+    @include grid(2, 2rem);
+    gap: 4rem;
+  };
+  padding: 4rem;
+
+  .nombreServicio {
+    font-size: 1.6rem;
+    font-weight: $normal;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .precioServicio {
+    font-family: $secundary-font, 'Poppins', sans-serif;
+    letter-spacing: .5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .contenedorServicio {
+    padding: 3rem 0;
+    position: relative;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: $semi-bold;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    color: $text-light;
+    background: linear-gradient(145deg, #1f1f1f, #1a1a1a);
+    box-shadow: 6px 6px 25px #0c0c0c,
+      -6px -6px 25px #2e2e2e;
+
+    &:hover {
+      @include tablet {
+        cursor: pointer;
+      };
+    }
+
+    &.seleccionado {
+      &::before {
+        content: '';
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: $led;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+
+      @include down;
+    }
+  }
+}

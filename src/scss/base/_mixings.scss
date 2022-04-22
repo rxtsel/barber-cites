@@ -1,0 +1,46 @@
+@mixin movil {
+  @media (min-width: $movil) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin grid($columns, $espaciado) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $espaciado;
+  @content;
+}
+
+@mixin up {
+  border: none;
+  outline: none;
+  color: $text-light;
+  background: linear-gradient(145deg, #1f1f1f, #1a1a1a);
+  box-shadow: 6px 6px 25px #0c0c0c,
+    -6px -6px 25px #2e2e2e;
+  @content;
+}
+
+@mixin down {
+  border: none;
+  outline: none;
+  color: $text-dark;
+  text-shadow: 6px 6px 25px #0c0c0c,
+    -6px -6px 25px #2e2e2e;
+  background: #1d1d1d;
+  box-shadow: inset 6px 6px 25px #0c0c0c,
+    inset -6px -6px 25px #2e2e2e;
+  @content;
+}
