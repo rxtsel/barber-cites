@@ -1,1 +1,72 @@
-<!DOCTYPE html><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Barber Shop</title><link rel="icon" type="image/png" href="build/img/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="build/img/favicon-16x16.png" sizes="16x16"><link rel="stylesheet" href="build/css/style.css"><link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"><body><main class="main"><div class="bg-img"></div><div class="app"><a href="https://github.com/rxtsel/barber-cites" target="_blank"><div class="github"><i class="bx bxl-github"></i></div></a><div class="made"><p>Made by <a href="https://github.com/rxtsel" target="_blank">Rxtsel</a></p></div><header class="header"><h1 class="header__title">Barber Shop</h1></header><nav class="nav tabs"><button class="button" type="button" data-paso="1">Servicios</button> <button class="button" type="button" data-paso="2">Cliente</button> <button class="button" type="button" data-paso="3">Resumen</button></nav><!-- SECCIONES --><section id="paso-1" class="seccion"><h2 class="seccion__title">Servicios</h2><p class="seccion__text">Elige nuestros servicios y agendalos</p><div class="listado-servicios" id="servicios"></div></section><section id="paso-2" class="seccion"><h2 class="seccion__title">Tus datos y cita</h2><p class="seccion__text">Coloca los datos y fecha de tu cita</p><form action="" class="form"><div class="campo"><label for="nombre">Nombre:</label> <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" autocomplete="off"></div><div class="campo"><label for="fecha">Fecha:</label> <input type="date" name="fecha" id="fecha"></div><div class="campo"><label for="hora">Hora:</label> <input type="time" name="hora" id="hora"></div></form></section><section id="paso-3" class="seccion resumen"><h2 class="seccion__title">Resumen</h2></section><!-- paginador --><div class="paginador"><button class="button-pg" id="prev">&laquo; Anterior</button> <button class="button-pg" id="next">Siguiente &raquo;</button></div></div></main><script src="build/js/bundle.min.js"></script></body>
+<!DOCTYPE html>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barber Shop</title>
+  <link rel="icon" type="image/png" href="build/img/favicon-32x32.png" sizes="32x32"/>
+  <link rel="icon" type="image/png" href="build/img/favicon-16x16.png" sizes="16x16"/>
+  <link rel="stylesheet" href="build/css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<body>
+
+  <main class="main">
+    <div class="bg-img"></div>
+    <div class="app">
+      <a href="https://github.com/rxtsel/barber-cites" target="_blank">
+        <div class="github"><i class='bx bxl-github'></i></div>
+      </a>
+      <header class="header">
+        <h1 class="header__title">Barber Shop</h1>
+      </header>
+      <nav class="nav tabs">
+        <button class="button" type="button" data-paso="1">Servicios</button>
+        <button class="button" type="button" data-paso="2">Cliente</button>
+        <button class="button" type="button" data-paso="3">Resumen</button>
+      </nav>
+
+      <!-- SECCIONES -->
+      <section id="paso-1" class="seccion">
+        <h2 class="seccion__title">Servicios</h2>
+        <p class="seccion__text">Elige nuestros servicios y agendalos</p>
+        <div class="listado-servicios" id="servicios"></div>
+      </section>
+
+      <section id="paso-2" class="seccion">
+        <h2 class="seccion__title">Tus datos y cita</h2>
+        <p class="seccion__text">Coloca los datos y fecha de tu cita</p>
+
+        <form action="" class="form">
+          <div class="campo">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" autocomplete="off">
+          </div>
+          <div class="campo">
+            <label for="fecha">Fecha: </label>
+            <input type="date" name="fecha" id="fecha">
+          </div>
+          <div class="campo">
+            <label for="hora">Hora: </label>
+            <input type="time" name="hora" id="hora">
+          </div>
+        </form>
+      </section>
+
+      <section id="paso-3" class="seccion resumen">
+        <h2 class="seccion__title">Resumen</h2>
+      </section>
+
+      <!-- paginador -->
+      <div class="paginador">
+        <button class="button-pg" id="prev">&laquo; Anterior</button>
+        <button class="button-pg" id="next">Siguiente &raquo;</button>
+      </div>
+
+    </div>
+
+
+    <footer class="made"><p>Made by <a href="https://github.com/rxtsel" target="_blank">Rxtsel</a></p></>
+
+  </main>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>

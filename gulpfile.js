@@ -21,8 +21,6 @@ const paths = {
   destScss: './build/css',
   srcJs: 'src/js/**/*.js',
   destJs: './build/js',
-  html: './*.html',
-  destHtml: './',
 }
 
 // funcion que compila sass
@@ -60,13 +58,6 @@ function webpImg(){
 		.pipe(dest(paths.destImg))
 }
 
-// fucion que minificca html
-function htmlMin(){
-  return src(paths.html)
-  .pipe(htmlmin({ collapseWhitespace: true }))
-  .pipe(gulp.dest(paths.destHtml));
-}
-
 // funcion que escucha todos los cambios y luego compila sass y js
 function listenChanges(){
   watch(paths.srcScss, compileSASS)
@@ -76,4 +67,3 @@ function listenChanges(){
 }
 
 exports.default = parallel(compileSASS, js, minImg, webpImg, listenChanges);
-exports.html = htmlMin;

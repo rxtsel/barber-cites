@@ -1,4 +1,5 @@
 .github {
+  z-index: 999;
   position: fixed;
   top: 0;
   left: 0;
@@ -22,5 +23,10 @@
   bottom: 2rem;
   a {
     color: $white;
+  }
+  @include reducer {
+    &{
+      display: none;
+    }
   }
 }

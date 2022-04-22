@@ -44,3 +44,9 @@
     inset -6px -6px 25px #2e2e2e;
   @content;
 }
+
+@mixin  reducer {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
