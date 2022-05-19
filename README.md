@@ -1,5 +1,10 @@
 # barber-cites
 App to schedule appointments in a barbershop 💈
 
-![image](https://user-images.githubusercontent.com/85462420/164953666-ec14a614-6106-42e5-8806-1c920288a29a.png)
-![image](https://user-images.githubusercontent.com/85462420/164953701-a39a6140-5a1b-45ee-832e-aa70de54e3de.png)
+Desktop:
+
+![imagen](https://user-images.githubusercontent.com/85462420/169357262-30e64659-9d63-4e19-82fe-400e098cd2d4.png)
+
+Mobile:
+
+![imagen](https://user-images.githubusercontent.com/85462420/169357411-2116fe40-0f63-45c9-b063-a78931cb62fd.png)
