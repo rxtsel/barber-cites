@@ -1,0 +1,14 @@
+.made {
+  position: fixed;
+  color: $white;
+  left: 2rem;
+  bottom: 2rem;
+  a {
+    color: $white;
+  }
+  @include reducer {
+    &{
+      display: none;
+    }
+  }
+}

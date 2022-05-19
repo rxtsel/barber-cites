@@ -7,13 +7,21 @@ body {
   font-family: $secundary-font;
   letter-spacing: 1rem;
   font-size: 6rem;
+  @include reducer {
+    position: absolute;
+    top: 12rem;
+    left: 0;
+    right: 0;
+  }
 }
 
 .main {
   @include tablet {
     height: 100vh;
     @include grid(2, calc($separacion / 2));
-  };
+  }
+
+  ;
 
   .bg-img {
     background-image: url(../img/bg.jpg);
@@ -74,6 +82,7 @@ body {
 
     &.actual {
       position: relative;
+
       @include down {
         &::before {
           content: '';
@@ -85,7 +94,9 @@ body {
           top: 10px;
           right: 10px;
         }
-      };
+      }
+
+      ;
 
     }
   }
